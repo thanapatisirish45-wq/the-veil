@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Archive</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0b0b0b;
+      color: #c9c9c9;
+      font-family: Georgia, serif;
+    }
+
+    header {
+      padding: 25px 8%;
+      border-bottom: 1px solid #242424;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .title {
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
+
+    .status {
+      font-family: monospace;
+      font-size: 11px;
+      color: #666;
+    }
+
+    main {
+      max-width: 850px;
+      margin: 70px auto;
+      padding: 0 25px;
+    }
+
+    .entry {
+      border: 1px solid #252525;
+      background: #101010;
+      padding: 25px;
+    }
+
+    .date {
+      font-family: monospace;
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+
+    .photo {
+      width: 100%;
+      display: block;
+      filter: grayscale(100%) contrast(1.15) brightness(.75);
+      cursor: crosshair;
+    }
+
+    .caption {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #777;
+      line-height: 1.7;
+    }
+
+    .metadata {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #242424;
+      font-family: monospace;
+      font-size: 11px;
+      line-height: 2;
+      color: #555;
+    }
+
+    /* The clue isn't announced to the player */
+    .hidden {
+      color: #101010;
+      user-select: text;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 80px;
+      font-family: monospace;
+      font-size: 10px;
+      color: #333;
+    }
+
+    @media (max-width: 600px) {
+      main {
+        margin-top: 40px;
+      }
+
+      header {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="title">ARCHIVE</div>
+  <div class="status">INDEX ONLINE</div>
+</header>
+
+<main>
+
+  <section class="entry">
+
+    <div class="date">
+      RECORD / 04 / UNCLASSIFIED
+    </div>
+
+    <!-- Replace this file with the bird image you create -->
+    <img
+      class="photo"
+      src="bird.jpg"
+      alt="Archived photograph"
+    >
+
+    <div class="caption">
+      Photograph recovered from an unidentified collection.
+      Original source and photographer unknown.
+    </div>
+
+    <div class="metadata">
+      FILE: IMG_04<br>
+      TYPE: PHOTOGRAPH<br>
+      CONDITION: PARTIAL<br>
+      LOCATION: UNKNOWN<br>
+      STATUS: UNVERIFIED
+    </div>
+
+    <!-- Hidden clue -->
+    <div class="hidden">
+      LOOK BEYOND THE BIRD. THE ANSWER IS IN WHAT IT REFUSES TO FACE.
+    </div>
+
+  </section>
+
+  <div class="footer">
+    ARCHIVE SYSTEM // NO PUBLIC INDEX
+  </div>
+
+</main>
+
+</body>
+</html>
